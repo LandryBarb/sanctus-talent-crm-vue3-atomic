@@ -1,0 +1,37 @@
+// abstracts
+@use 'abstracts/variables';
+@use 'abstracts/colors';
+@use 'abstracts/mixins';
+@use 'abstracts/functions';
+
+// base
+@use 'base/reset';
+@use 'base/base';
+@use 'base/fonts';
+@use 'base/animations';
+
+// layout
+@use 'layout/grid';
+@use 'layout/spacing';
+@use 'layout/containers';
+
+// components
+@use 'components/buttons';
+@use 'components/inputs';
+@use 'components/cards';
+@use 'components/forms';
+
+// utilities
+@use 'utilities/helpers';
+@use 'utilities/visually-hidden';
+
+// themes
+@use 'themes/default';
+
+
+body{
+background-color: var(--bg-surface);
+color: var(--text-default);
+border-color: var(--border-default);
+
+}

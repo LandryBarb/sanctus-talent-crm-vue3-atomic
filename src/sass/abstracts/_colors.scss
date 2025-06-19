@@ -1,0 +1,47 @@
+// -----------------------------
+// Theme: Color Tokens (HSL)
+// -----------------------------
+
+// Light Theme (Default)
+:root {
+  --color-primary:        hsl(247, 28%, 32%);
+  --color-secondary:      hsl(247, 24%, 60%);
+  --color-accent:         hsl(30, 59%, 60%);
+  --color-surface:        hsl(255, 21%, 98%);
+  --color-on-surface:     hsl(247, 23%, 11%);
+  --color-border:         hsl(245, 23%, 88%);
+  --color-success:        hsl(149, 50%, 45%);
+  --color-warning:        hsl(39, 87%, 59%);
+  --color-error:          hsl(358, 64%, 60%);
+
+  // Semantic tokens
+  --btn-primary:          var(--color-primary);
+  --btn-secondary:        var(--color-secondary);
+  --btn-accent:           var(--color-accent);
+
+  --bg-surface:           var(--color-surface);
+  --bg-panel:             hsl(255, 21%, 96%);
+  --border-default:       var(--color-border);
+
+  --text-default:         var(--color-on-surface);
+  --text-muted:           hsl(247, 23%, 50%);
+  --text-on-primary:      hsl(0, 0%, 100%);
+  --text-on-surface:      var(--color-on-surface);
+}
+
+// Dark Theme
+body[data-theme='dark'] {
+  --color-primary:        hsl(247, 56%, 76%);
+  --color-secondary:      hsl(247, 15%, 50%);
+  --color-accent:         hsl(38, 79%, 75%);
+  --color-surface:        hsl(247, 26%, 7%);
+  --color-on-surface:     hsl(0, 0%, 100%);
+  --color-border:         hsl(247, 15%, 22%);
+  --color-success:        hsl(149, 55%, 57%);
+  --color-warning:        hsl(38, 100%, 72%);
+  --color-error:          hsl(358, 84%, 66%);
+
+  // Semantic tokens override automatically
+  --bg-panel:             hsl(247, 26%, 10%);
+  --text-muted:           hsl(247, 15%, 65%);
+}

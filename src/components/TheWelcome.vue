@@ -1,6 +1,7 @@
 <script setup>
 
 import ArtistCard from './molecules/ArtistCard.vue'
+import BaseButton from './atoms/BaseButton.vue'
 
 
 </script>
@@ -8,5 +9,6 @@ import ArtistCard from './molecules/ArtistCard.vue'
 <template>
 
   <ArtistCard></ArtistCard>
+  <BaseButton></BaseButton>
  
 </template>
