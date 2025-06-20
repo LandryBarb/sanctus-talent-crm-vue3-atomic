@@ -1,0 +1,42 @@
+.base-input{
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    font-size: 1rem;
+    &__label{
+        font-weight: 600;
+        color: var(--text-default);
+    }
+    &__field{
+        padding: 0.625rem 0.75;
+        border: 1px solid var(--border-default);
+        border-radius: 0.5rem;
+        background: var(--bg-surface);
+        color: var(--text-default);
+        font: inherit;
+        transition: border-color 0.2s ese, box-shadow 0.2 ease;
+
+        &:focus{
+            outline: none;
+            border-color:var(--color-primary);
+            box-shadow: 0 0 0 2px hsla(247, 28%, 32%, 0.2);
+        }
+        &:disabled{
+            background-color: hsl(255, 21%, 95%);
+            color: var(--text-muted);
+            cursor: not-allowed;
+        }
+        &[aria-invalid="true"]{
+            border-color: var(--color-error);
+        }
+    }
+    &__description{
+        font-size: 0.875rem;
+        color: var(--text-muted);
+    }
+    &__error{
+        font-size: 0.875rem;
+        color: var(--color-error);
+        margin-block-start: 0.25rem;
+    }
+}

@@ -1,0 +1,36 @@
+.base-select {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+
+  &__label {
+    font-weight: 600;
+    color: var(--text-default);
+  }
+
+  &__field {
+    padding: 0.625rem 0.75rem;
+    border: 1px solid var(--border-default);
+    border-radius: 0.5rem;
+    background-color: var(--bg-surface);
+    color: var(--text-default);
+    font: inherit;
+
+    &:focus {
+      border-color: var(--color-primary);
+      outline: none;
+      box-shadow: 0 0 0 2px hsla(247, 28%, 32%, 0.2);
+    }
+
+    &:disabled {
+      background-color: var(--bg-muted);
+      color: var(--text-muted);
+      cursor: not-allowed;
+    }
+  }
+
+  &__error {
+    font-size: 0.875rem;
+    color: var(--color-error);
+  }
+}
